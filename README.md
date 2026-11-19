@@ -25,6 +25,22 @@ scripts/vendor.sh  re-vendor a plugin from its upstream at a pinned tag
 
 ## Install from this repo
 
+Two routes, both ending at code only this repository controls.
+
+Your own marketplace (browse, install, and update through bb's plugin UI):
+
+```sh
+bb marketplace add "git:https://github.com/aade-sh/bb-plugins.git@main"
+```
+
+`marketplace.json` at the repo root indexes all eight plugins. Each entry
+resolves a tag range (`^x.y.z`) with a per-plugin tag prefix
+(`<name>/vX.Y.Z`), so a version reaches bb only after you re-vendor it,
+tag it, and push. `bb marketplace refresh aadesh-plugins` re-reads the
+catalog after changes.
+
+Or direct installs, one plugin at a time:
+
 bb refuses to install a plugin that is already installed, so first remove
 the marketplace/upstream install, then install from here. Removing a plugin
 deletes its bb-managed settings (burn keeps its own backup copy of its
@@ -59,6 +75,16 @@ The script copies the source at the tag into `plugins/<name>`, updates
 `provenance.json`, and prints the commit it vendored. Re-read the diff and
 `AUDIT.md` before installing a re-vendored version: a new upstream release
 is unaudited code until reviewed.
+
+To publish the new version to your marketplace, tag the repo with the
+plugin's prefix and push:
+
+```sh
+git tag burn/v0.10.0 && git push origin main --tags
+```
+
+Update the entry's `range` in `marketplace.json` when you want bb to pick
+the new version up through `bb plugin update`.
 
 The bb version range in `engines.bb` / `engines.bbPluginSdk` of each plugin
 still applies; bb rejects candidates the host cannot run.

@@ -1,0 +1,135 @@
+{
+  "$schema": "https://getbb.app/schemas/marketplace.schema.json",
+  "schemaVersion": 1,
+  "name": "aadesh-plugins",
+  "displayName": "Aadesh Plugins",
+  "description": "Audited personal copies of third-party bb plugins. Sources are pinned to tags in this repository; re-vendor and re-audit before adding a new version.",
+  "plugins": [
+    {
+      "id": "agent-board",
+      "displayName": "Agent Board",
+      "description": "Live execution observability for BB agents, models, tools, and delegated workers.",
+      "tags": ["agents", "observability"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/agent-board",
+          "range": "^0.7.0",
+          "tagPrefix": "agent-board/"
+        }
+      }
+    },
+    {
+      "id": "agent-traces",
+      "displayName": "Agent Traces",
+      "description": "See where an agent's time goes: a waterfall of every turn's commands, tool calls, and subagents.",
+      "icon": { "url": "./plugins/agent-traces/assets/agent-traces.svg" },
+      "tags": ["agents", "observability"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/agent-traces",
+          "range": "^1.0.0",
+          "tagPrefix": "agent-traces/"
+        }
+      }
+    },
+    {
+      "id": "beautiful-chat",
+      "displayName": "Beautiful Chat",
+      "description": "Restyles BB's chat — composer, messages, work rows, loading states — in BeautifulUI's design language, using your active theme's colors.",
+      "icon": { "url": "./plugins/beautiful-chat/assets/icon.svg" },
+      "tags": ["theme", "appearance"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/beautiful-chat",
+          "range": "^0.1.2",
+          "tagPrefix": "beautiful-chat/"
+        }
+      }
+    },
+    {
+      "id": "bb-sidebar",
+      "displayName": "BB Sidebar",
+      "description": "Organizes bb threads with manual and automatic sorting, snooze, and settle actions.",
+      "tags": ["threads", "sidebar"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/bb-sidebar",
+          "range": "^0.3.12",
+          "tagPrefix": "bb-sidebar/"
+        }
+      }
+    },
+    {
+      "id": "bbium",
+      "displayName": "Bbium",
+      "description": "Vimium-style keys: f to click by label, j/k and d/u to scroll, i for the composer.",
+      "icon": { "url": "./plugins/bbium/icons/bbium.svg" },
+      "tags": ["appearance", "keys"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/bbium",
+          "range": "^0.1.5",
+          "tagPrefix": "bbium/"
+        }
+      }
+    },
+    {
+      "id": "burn",
+      "displayName": "Burn",
+      "description": "See what each thread has cost, per prompt and across threads, with budgets.",
+      "icon": { "url": "./plugins/burn/assets/icon.svg" },
+      "tags": ["usage", "costs"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/burn",
+          "range": "^0.9.4",
+          "tagPrefix": "burn/"
+        }
+      }
+    },
+    {
+      "id": "flexoki",
+      "displayName": "Flexoki",
+      "description": "Bring Steph Ango's Flexoki ink-and-paper palette to BB: light and dark UI, matching syntax and terminal colours.",
+      "icon": { "url": "./plugins/flexoki/assets/flexoki.svg" },
+      "tags": ["theme", "appearance"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/flexoki",
+          "range": "^0.1.5",
+          "tagPrefix": "flexoki/"
+        }
+      }
+    },
+    {
+      "id": "fonts",
+      "displayName": "Fonts",
+      "description": "Choose local fonts and tune typography independently of your BB theme.",
+      "icon": { "url": "./plugins/fonts/assets/icon.svg" },
+      "tags": ["appearance", "typography"],
+      "author": { "name": "Aadesh", "github": "aade-sh" },
+      "source": {
+        "git": {
+          "url": "https://github.com/aade-sh/bb-plugins.git",
+          "subdir": "plugins/fonts",
+          "range": "^0.2.0",
+          "tagPrefix": "fonts/"
+        }
+      }
+    }
+  ]
+}
