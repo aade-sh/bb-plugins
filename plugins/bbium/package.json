@@ -1,0 +1,60 @@
+{
+  "name": "bb-plugin-bbium",
+  "version": "0.1.5",
+  "description": "Vimium-style keys for bb: f for click hints, j/k and d/u to scroll, i for the composer.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Andrej Kostal (https://github.com/kuringer)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuringer/bb-plugin-bbium.git"
+  },
+  "keywords": [
+    "bb-plugin",
+    "vimium",
+    "vim",
+    "keyboard",
+    "hints",
+    "shortcuts"
+  ],
+  "scripts": {
+    "lint": "biome lint .",
+    "test": "node --test hints.test.ts keys.test.ts settings.test.ts",
+    "typecheck": "tsc -p .",
+    "build": "bb plugin build",
+    "knip": "knip",
+    "check:sdk": "bb plugin types --check",
+    "gate": "npm run lint && npm run typecheck && npm run test && npm run build && npm run knip && npm run check:sdk && npm run e2e:hints && npm run e2e",
+    "verify": "npm run typecheck && npm test && npm run build",
+    "e2e": "node e2e/smoke.mjs",
+    "e2e:hints": "node --no-warnings e2e/wrapped.mjs"
+  },
+  "engines": {
+    "node": ">=22.18",
+    "bb": ">=0.45",
+    "bbPluginSdk": ">=0.6.15"
+  },
+  "bb": {
+    "name": "Bbium",
+    "description": "Vimium-style keys: f to click by label, j/k and d/u to scroll, i for the composer.",
+    "branding": {
+      "icon": "./icons/bbium.svg"
+    },
+    "server": "./server.ts",
+    "app": "./app.tsx",
+    "skills": [
+      "skills"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.6",
+    "@get-bb/plugin-sdk": "0.6.132",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "hono": "^4.13.13",
+    "knip": "^6.44.2",
+    "playwright-core": "^1.64.0",
+    "typescript": "^5.7.0"
+  }
+}

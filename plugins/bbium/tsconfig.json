@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "node"
+    ],
+    "noEmit": true,
+    "skipLibCheck": false,
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "server.ts",
+    "app.tsx",
+    "hints.ts",
+    "keys.ts",
+    "scroll.ts",
+    "hints.test.ts",
+    "style.ts",
+    "settings.test.ts",
+    "keys.test.ts"
+  ]
+}

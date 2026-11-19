@@ -1,0 +1,71 @@
+{
+  "note": "Each plugins/<name> directory is a verbatim copy of the upstream plugin at the recorded commit. Update this file when you re-vendor.",
+  "vendoredAt": "2026-11-19",
+  "plugins": [
+    {
+      "name": "agent-board",
+      "upstream": "https://github.com/aaronphifer/bb-plugin-agent-board",
+      "version": "0.7.0",
+      "tag": "v0.7.0",
+      "commit": "c4a6633662ee2a237f824b3f0e199a5cef89892c",
+      "license": "MIT",
+      "installedFrom": "git:https://github.com/aaronphifer/bb-plugin-agent-board.git@semver:^0.7.0"
+    },
+    {
+      "name": "agent-traces",
+      "upstream": "https://github.com/charpeni/bb-plugins",
+      "subdirectory": "plugins/agent-traces",
+      "version": "1.0.0",
+      "tag": "agent-traces/v1.0.0",
+      "commit": "de00e14f21632bbedebd0f957ab2b1bb5f25e58d",
+      "license": "MIT (repo root, Nicolas Charpentier)",
+      "installedFrom": "git:https://github.com/charpeni/bb-plugins.git@semver:agent-traces/:^1.0.0"
+    },
+    {
+      "name": "bb-sidebar",
+      "upstream": "https://github.com/yusuf8834/bb-sidebar",
+      "fork": "https://github.com/aade-sh/bb-sidebar",
+      "version": "0.3.12",
+      "tag": "v0.3.12 (vendored one commit past the tag, at the running commit of the aade-sh fork)",
+      "commit": "30d5a4f7e56ee6b78abba52ac0870a0b52e675b8",
+      "license": "MIT",
+      "installedFrom": "path: (bb-managed workspace checkout of the aade-sh fork, server machine yavin)"
+    },
+    {
+      "name": "bbium",
+      "upstream": "https://github.com/kuringer/bb-plugin-bbium",
+      "version": "0.1.5",
+      "tag": "v0.1.5",
+      "commit": "8c188913a656c4136ad0b881f94540b34f63c80c",
+      "license": "MIT",
+      "installedFrom": "git:https://github.com/kuringer/bb-plugin-bbium.git@semver:^0.1.4"
+    },
+    {
+      "name": "burn",
+      "upstream": "https://github.com/kalindudc/burn",
+      "version": "0.9.4",
+      "tag": "v0.9.4",
+      "commit": "9b27b3e049b0191d51e4e2fcdd5b2a974e006a69",
+      "license": "MIT",
+      "installedFrom": "git:https://github.com/kalindudc/burn.git@semver:>=0.4.0 <1.0.0"
+    },
+    {
+      "name": "flexoki",
+      "upstream": "https://github.com/ponomr/bb-plugin-flexoki",
+      "version": "0.1.5",
+      "tag": "v0.1.5",
+      "commit": "ced199cef6948919d449560a7a2f5cb7af70f9e6",
+      "license": "MIT",
+      "installedFrom": "git:https://github.com/ponomr/bb-plugin-flexoki.git@semver:^0.1.0"
+    },
+    {
+      "name": "fonts",
+      "upstream": "https://github.com/gtramontina/bb-plugin-fonts",
+      "version": "0.2.0",
+      "tag": "v0.2.0",
+      "commit": "729d1f41430b7aca41b7bb52db234cb607288abb",
+      "license": "MIT",
+      "installedFrom": "git:https://github.com/gtramontina/bb-plugin-fonts.git@semver:^0.2.0"
+    }
+  ]
+}

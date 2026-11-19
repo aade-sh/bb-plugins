@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": ["server.ts", "app.tsx", "*.test.ts", "e2e/*.mjs"],
+  "project": ["*.{ts,tsx}", "e2e/**/*.mjs"],
+  "ignoreBinaries": ["bb"]
+}

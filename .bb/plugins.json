@@ -1,0 +1,14 @@
+{
+  "$schema": "https://getbb.app/schemas/plugins.schema.json",
+  "schemaVersion": 1,
+  "name": "aadesh-plugins",
+  "plugins": [
+    { "name": "agent-board", "source": "./plugins/agent-board" },
+    { "name": "agent-traces", "source": "./plugins/agent-traces" },
+    { "name": "bb-sidebar", "source": "./plugins/bb-sidebar" },
+    { "name": "bbium", "source": "./plugins/bbium" },
+    { "name": "burn", "source": "./plugins/burn" },
+    { "name": "flexoki", "source": "./plugins/flexoki" },
+    { "name": "fonts", "source": "./plugins/fonts" }
+  ]
+}
