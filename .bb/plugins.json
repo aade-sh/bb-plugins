@@ -5,6 +5,7 @@
   "plugins": [
     { "name": "agent-board", "source": "./plugins/agent-board" },
     { "name": "agent-traces", "source": "./plugins/agent-traces" },
+    { "name": "beautiful-chat", "source": "./plugins/beautiful-chat" },
     { "name": "bb-sidebar", "source": "./plugins/bb-sidebar" },
     { "name": "bbium", "source": "./plugins/bbium" },
     { "name": "burn", "source": "./plugins/burn" },

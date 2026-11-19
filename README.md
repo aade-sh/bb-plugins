@@ -11,6 +11,7 @@ time. See `AUDIT.md` for the security review of each vendored version and
 plugins/           one directory per plugin, verbatim upstream source
   agent-board/     github.com/aaronphifer/bb-plugin-agent-board
   agent-traces/    github.com/charpeni/bb-plugins (plugins/agent-traces)
+  beautiful-chat/  github.com/diip3sh/bb-plugin-beautiful-chat
   bb-sidebar/     own fork: github.com/aade-sh/bb-sidebar (upstream: yusuf8834)
   bbium/           github.com/kuringer/bb-plugin-bbium
   burn/            github.com/kalindudc/burn

@@ -41,6 +41,15 @@
       "installedFrom": "git:https://github.com/kuringer/bb-plugin-bbium.git@semver:^0.1.4"
     },
     {
+      "name": "beautiful-chat",
+      "upstream": "https://github.com/diip3sh/bb-plugin-beautiful-chat",
+      "version": "0.1.2",
+      "tag": "v0.1.2",
+      "commit": "f0c0220082f7ba625fb3ae650385b9be91576f8e",
+      "license": "MIT",
+      "installedFrom": "bb-community marketplace (beautiful-chat, range ^0.1.0); uninstalled before this audit, vendored at the tag the range resolves to"
+    },
+    {
       "name": "burn",
       "upstream": "https://github.com/kalindudc/burn",
       "version": "0.9.4",

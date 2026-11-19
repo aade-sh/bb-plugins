@@ -2,8 +2,10 @@
 
 Audited by an agent, at the request of the repository owner. Scope: every
 non-builtin bb plugin installed on the bb server (machine `yavin`) at audit
-time. Each plugin was reviewed at the **exact commit that is installed** (see
-`provenance.json`); upstream `main` may be newer.
+time, plus `beautiful-chat`, which the owner had installed from the
+community marketplace and removed before the audit. Each plugin was reviewed
+at the **exact commit that is installed** (see `provenance.json`); upstream
+`main` may be newer.
 
 ## Method
 
@@ -25,6 +27,18 @@ commands behind your back at install time. Details and trust surfaces per
 plugin below.
 
 ## Findings per plugin
+
+### beautiful-chat (0.1.2)
+
+- Vendored at `v0.1.2`, the tag the community-marketplace range `^0.1.0`
+  resolves to (the version a recent install got; the plugin was removed
+  before this audit, so no installed copy exists to diff against).
+- Pure frontend restyle. The server entry only declares fifteen appearance
+  settings. The app sets `data-bui-*` attributes on `<html>`, registers a
+  CSS Paint Worklet that draws the "coins" loader on a canvas, and mounts
+  tooltips. Zero runtime dependencies.
+- The repository also ships prebuilt bundles in `dist/`; those were scanned
+  too — same result: no network, no file access, no hidden code.
 
 ### agent-board (0.7.0)
 
