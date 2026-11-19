@@ -9,6 +9,7 @@
       "id": "agent-board",
       "displayName": "Agent Board",
       "description": "Live execution observability for BB agents, models, tools, and delegated workers.",
+      "icon": "Columns",
       "tags": ["agents", "observability"],
       "author": { "name": "Aadesh", "github": "aade-sh" },
       "source": {
@@ -56,6 +57,7 @@
       "id": "bb-sidebar",
       "displayName": "BB Sidebar",
       "description": "Organizes bb threads with manual and automatic sorting, snooze, and settle actions.",
+      "icon": "PanelLeft",
       "tags": ["threads", "sidebar"],
       "author": { "name": "Aadesh", "github": "aade-sh" },
       "source": {
