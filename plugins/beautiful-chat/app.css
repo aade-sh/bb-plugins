@@ -10,12 +10,13 @@
    With no attributes (settings still loading) everything uses its default. */
 
 :root {
-  --bui-surface: color-mix(in oklch, var(--ink) 4%, var(--canvas));
-  --bui-field: color-mix(in oklch, var(--ink) 7%, var(--canvas));
-  --bui-inset: color-mix(in oklch, var(--ink) 3%, var(--canvas));
-  --bui-hover: color-mix(in oklch, var(--ink) 8%, transparent);
-  --bui-line: color-mix(in oklch, var(--ink) 11%, transparent);
-  --bui-line-strong: color-mix(in oklch, var(--ink) 18%, transparent);
+  /* Preserve the hue of near-neutral themes in older Chromium versions. */
+  --bui-surface: color-mix(in oklab, var(--ink) 4%, var(--canvas));
+  --bui-field: color-mix(in oklab, var(--ink) 7%, var(--canvas));
+  --bui-inset: color-mix(in oklab, var(--ink) 3%, var(--canvas));
+  --bui-hover: color-mix(in oklab, var(--ink) 8%, transparent);
+  --bui-line: color-mix(in oklab, var(--ink) 11%, transparent);
+  --bui-line-strong: color-mix(in oklab, var(--ink) 18%, transparent);
   --bui-ink: var(--foreground);
   --bui-ink-2: var(--muted-foreground);
   --bui-ink-3: var(--subtle-foreground);
