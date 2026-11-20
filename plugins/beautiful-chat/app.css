@@ -181,6 +181,15 @@
   padding: 6px 12px;
 }
 
+/* Keep BB's light-mode mention gradient without Chromium's pink tint. */
+:root:not(.dark) [data-timeline-row-list] .prompt-mention-pill {
+  --pill-surface: linear-gradient(
+    to bottom,
+    color-mix(in oklab, var(--ink) 4.4%, var(--canvas)),
+    color-mix(in oklab, var(--ink) 4.7%, var(--canvas))
+  );
+}
+
 /* ── Code (codeChips): inline code as hairline chips, blocks as hairline cards ── */
 :root:not([data-bui-off~="code"]) [data-timeline-row-list] [data-markdown-preview] :not(pre) > code {
   border-radius: 5px;
