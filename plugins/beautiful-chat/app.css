@@ -328,7 +328,7 @@
 :root:not([data-bui-off~="rows"]) [data-timeline-row-list] .group\/timeline-row + .grid > .overflow-hidden > div > .rounded-lg.border pre {
   padding: 0 0 2px;
   /* BB dims op rows to 40%; keep the log lines from outshining their header. */
-  color: color-mix(in oklch, var(--bui-ink-3) 70%, transparent);
+  color: color-mix(in oklab, var(--bui-ink-3) 70%, transparent);
   font-family: inherit;
   font-size: 12.5px;
   line-height: 22px;
@@ -394,15 +394,15 @@
 :root[data-bui-loader="drive"] [data-timeline-row-list] .group\/timeline-row > button > span > span:has(> span > .animate-shine:first-child)::before,
 :root[data-bui-loader="coins"]:not([data-bui-coins-ready]) [data-timeline-row-list] .group\/timeline-row > button > span > span:has(> span > .animate-shine:first-child)::before {
   background:
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 0 0) 0px 0px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 0 0) 5px 0px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 0 0) 10px 0px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-a) * 100%), transparent) 0 0) 0px 5px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 0 0) 5px 5px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 0 0) 10px 5px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 0 0) 0px 10px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 0 0) 5px 10px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 0 0) 10px 10px / 4px 4px no-repeat;
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 0 0) 0px 0px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 0 0) 5px 0px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 0 0) 10px 0px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-a) * 100%), transparent) 0 0) 0px 5px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 0 0) 5px 5px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 0 0) 10px 5px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 0 0) 0px 10px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 0 0) 5px 10px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 0 0) 10px 10px / 4px 4px no-repeat;
   animation:
     bui-px-a 650ms ease-in-out 0ms infinite,
     bui-px-b 650ms ease-in-out 90ms infinite,
@@ -412,15 +412,15 @@
 /* Dots: the same sweep with round pixels. */
 :root[data-bui-loader="dots"] [data-timeline-row-list] .group\/timeline-row > button > span > span:has(> span > .animate-shine:first-child)::before {
   background:
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 90%, transparent) 0px 0px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 90%, transparent) 5px 0px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 90%, transparent) 10px 0px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-a) * 100%), transparent) 90%, transparent) 0px 5px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 90%, transparent) 5px 5px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 90%, transparent) 10px 5px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 90%, transparent) 0px 10px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 90%, transparent) 5px 10px / 4px 4px no-repeat,
-    radial-gradient(closest-side, color-mix(in oklch, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 90%, transparent) 10px 10px / 4px 4px no-repeat;
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 90%, transparent) 0px 0px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 90%, transparent) 5px 0px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 90%, transparent) 10px 0px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-a) * 100%), transparent) 90%, transparent) 0px 5px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 90%, transparent) 5px 5px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 90%, transparent) 10px 5px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-b) * 100%), transparent) 90%, transparent) 0px 10px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-c) * 100%), transparent) 90%, transparent) 5px 10px / 4px 4px no-repeat,
+    radial-gradient(closest-side, color-mix(in oklab, var(--bui-px-on) calc(var(--bui-px-d) * 100%), transparent) 90%, transparent) 10px 10px / 4px 4px no-repeat;
   animation:
     bui-px-a 650ms ease-in-out 0ms infinite,
     bui-px-b 650ms ease-in-out 90ms infinite,
@@ -430,15 +430,15 @@
 /* Orbit: one lit pixel walks the edge; the centre stays dim. */
 :root[data-bui-loader="orbit"] [data-timeline-row-list] .group\/timeline-row > button > span > span:has(> span > .animate-shine:first-child)::before {
   background:
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-0) * 100%), transparent) 0 0) 0px 0px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-1) * 100%), transparent) 0 0) 5px 0px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-2) * 100%), transparent) 0 0) 10px 0px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-7) * 100%), transparent) 0 0) 0px 5px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) 7%, transparent) 0 0) 5px 5px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-3) * 100%), transparent) 0 0) 10px 5px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-6) * 100%), transparent) 0 0) 0px 10px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-5) * 100%), transparent) 0 0) 5px 10px / 4px 4px no-repeat,
-    linear-gradient(color-mix(in oklch, var(--bui-px-on) calc(var(--bui-orb-4) * 100%), transparent) 0 0) 10px 10px / 4px 4px no-repeat;
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-0) * 100%), transparent) 0 0) 0px 0px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-1) * 100%), transparent) 0 0) 5px 0px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-2) * 100%), transparent) 0 0) 10px 0px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-7) * 100%), transparent) 0 0) 0px 5px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) 7%, transparent) 0 0) 5px 5px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-3) * 100%), transparent) 0 0) 10px 5px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-6) * 100%), transparent) 0 0) 0px 10px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-5) * 100%), transparent) 0 0) 5px 10px / 4px 4px no-repeat,
+    linear-gradient(color-mix(in oklab, var(--bui-px-on) calc(var(--bui-orb-4) * 100%), transparent) 0 0) 10px 10px / 4px 4px no-repeat;
   animation:
     bui-orb-0 950ms ease-in-out 0ms infinite,
     bui-orb-1 950ms ease-in-out 110ms infinite,
@@ -716,8 +716,8 @@ ul)>li+li:before {
    darkens. The running row is the current node: its curve and the trunk leading
    down to it from the header are lit. */
 :root:not([data-bui-off~="tree"]) [data-timeline-row-list="bundle"] {
-  --bui-tree-dim: color-mix(in oklch, var(--ink) 22%, var(--background));
-  --bui-tree-lit: color-mix(in oklch, var(--ink) 72%, var(--background));
+  --bui-tree-dim: color-mix(in oklab, var(--ink) 22%, var(--background));
+  --bui-tree-lit: color-mix(in oklab, var(--ink) 72%, var(--background));
   position: relative;
   margin-left: 7px;
   padding-left: 16px;
